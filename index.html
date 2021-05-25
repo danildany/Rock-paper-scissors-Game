@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <title>Rock, Paper, Scissors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>
+        <span>Rock</span>
+        <span>Paper</span>
+        <span>Scissors</span>
+      </h1>
+      <div class="logo">
+        <img src="images/control.svg" alt="">
+      </div>
+    </header>
+    <main id="main">
+      <button class="btn-play rock" choice="rock">
+        <span class="wrapper">
+        <img src="images/icon-rock.svg" alt=""></span></button>
+      <button class="btn-play paper" choice="paper">
+        <span class="wrapper">
+        <img src="images/icon-paper.svg" alt=""></span></button>
+      <button class="btn-play scissors" choice="scissors">
+        <span class="wrapper">
+        <img src="images/icon-scissors.svg" alt=""></span></button>
+    </main>
+    <button class="rule">how to play</button>
+  </div>
+  <div class="modal-container">
+    <div class="box-rule">
+    <h2>REALLY?!,YOU DON'T KNOW HOW TO PLAY THIS?</h2>
+    <div class="modal">
+      <img src="images/rules.jpg" alt="">
+    </div>
+    <button class="close">CLOSE</button>
+    </div>
+  </div>
+  <div class="playing">
+    <div>
+      <p>YOU PICKED</p>
+      <button id="userch" class="btn-choice" disabled>
+      <span class="wrapper">
+      <img id="imguser" src="" alt=""></span></button></div>
+    <div>
+      <p class="state-text"></p>
+      <button class="restart">PLAY AGAIN</button>
+    </div>
+    <div>
+      <p>THE MACHINE PICKED</p>
+      <button id="compch" class="btn-choice" disabled>
+      <span class="wrapper">
+      <img id="imgmachine" src="" alt=""></span></button></div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
